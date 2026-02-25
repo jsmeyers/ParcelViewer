@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@source "**/*.{js,jsx,ts,tsx}";
+
+@theme {
+  --color-primary: #1e40af;
+  --color-primary-light: #3b82f6;
+  --color-secondary: #f59e0b;
+  --color-secondary-light: #fbbf24;
+  --color-background: #f8fafc;
+  --color-surface: #ffffff;
+  --color-text: #1e293b;
+  --color-text-muted: #64748b;
+  --color-border: #e2e8f0;
+  --color-selected: #3b82f6;
+  --color-flood: #06b6d4;
+  --color-zoning: #8b5cf6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+.map-container {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  touch-action: pan-x pan-y;
+  overscroll-behavior: none;
+}
+
+.esri-view-root,
+.esri-view-surface {
+  overscroll-behavior: contain;
+}
