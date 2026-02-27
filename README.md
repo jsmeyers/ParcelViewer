@@ -13,7 +13,7 @@ A GIS parcel viewing web application for exploring property data in Cambridge, M
 - **Shareable URLs**: Share searches and selections via URL parameters
 - **Responsive Design**: Works on desktop, tablet, and mobile devices
 
-![Cambridge Parcel Viewer Screenshot](parcelviewer.png)
+![Cambridge Parcel Viewer Screenshot](ParcelViewer.png)
 
 ## Tech Stack
 
