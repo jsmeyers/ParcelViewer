@@ -13,6 +13,8 @@ A GIS parcel viewing web application for exploring property data in Cambridge, M
 - **Shareable URLs**: Share searches and selections via URL parameters
 - **Responsive Design**: Works on desktop, tablet, and mobile devices
 
+![Cambridge Parcel Viewer Screenshot](parcelviewer.jpg)
+
 ## Tech Stack
 
 - **React 18** + **Vite** for fast development
@@ -40,35 +42,4 @@ npm run build
 
 # Preview production build
 npm run preview
-```
 
-## Data Sources
-
-All data comes from the City of Cambridge's public ArcGIS services:
-
-- **Parcels**: FY2025 parcel boundaries
-- **Property Database**: FY2022-FY2024 assessment data
-- **Flood Zones**: FEMA 100-year floodplain
-- **Zoning**: 1924 historic zoning districts
-
-## Project Structure
-
-```
-src/
-├── components/
-│   ├── Map/           # MapView and map layers
-│   ├── Search/        # Search bar and autocomplete
-│   ├── Sidebar/       # Navigation and controls
-│   ├── Property/      # Property detail panel
-│   ├── Export/        # Export modal
-│   └── Layout/        # Toast, Onboarding
-├── hooks/             # Custom React hooks
-├── services/          # ArcGIS API services
-├── store/             # Zustand state management
-├── utils/             # Formatting utilities
-└── App.jsx            # Main application
-```
-
-## License
-
-MIT
